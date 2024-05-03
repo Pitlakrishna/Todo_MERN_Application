@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, "./client/build")))
 
 app.use('/api/v1/task', authRoute)
 
-app.use('*', function (req, res) {
+app.use('*', function (req, res) { 
      res.sendFile(path.join(__dirname, './client/build/index.html'))
  })
 
